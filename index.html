@@ -9,15 +9,80 @@
     <link rel="icon" href="devchallenges.png" />
 
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
     <title>Devchallenges</title>
 
 </head>
 
-<body>
+<body class="container">
+    <header class="container__header">
+        <div class="container__header__title">
+            <h2>
+                This Interior
+            </h2>
+        </div>
+        <div id="nav" class="container__header__nav">
+            <div class="container__header__nav__second">
+                <p class="container__header__nav__item">Home</p>
+                <p class="container__header__nav__item">Collection</p>
+                <p class="container__header__nav__item">About</p>
+                <p class="container__header__nav__item">
+                    Contact
+                </p>
+            </div>
+        </div>
+        <button id="boton" class="container__header--openNav">
+            <img id="img" src="./menu.png" alt="/menu">
+        </button>
 
+    </header>
+    <div class="container__content">
+        <div class="container__content__info">
+            <h2>Modern interior</h2>
+            <p>
+                A full-Service residential & commercial interior design and staging company offering professional
+                organizing & eco-services.
+            </p>
+            <button>Read more =></button>
+        </div>
+
+        <img class="container__content__image" src="./photo1.png" alt="photo1">
+
+        <div class="container__content__card">
+
+            <div class="container__content__card__profile">
+                <img class="container__content__card__profile__image" src="./photo2.png" alt="photo2">
+                <div class="container__content__card__profile__info">
+                    <p class="container__content__card__profile__info__name">Aliza Webber</p>
+                    <p class="container__content__card__profile__info__position">Interior designer</p>
+                </div>
+            </div>
+            <div class="container__content__card__by">
+                <p>Designed in 2020 by Aliza Webber</p>
+            </div>
+        </div>
+    </div>
+    <footer class="container__footer">
+        <p>created by odiseo - devChallenges.io</p>
+    </footer>
+    <script>
+        function open() {
+            document.getElementById("nav").classList.toggle("open")
+        }
+        document.getElementById("boton").onclick = function () {
+            open();
+            var pic;
+            if (document.getElementById("img").src == "http://127.0.0.1:5500/menu.png") {
+                pic = "close.png"
+            }
+            else {
+                pic = "menu.png"
+            }
+            document.getElementById("img").src = pic
+        }
+    </script>
 </body>
 
 </html>
