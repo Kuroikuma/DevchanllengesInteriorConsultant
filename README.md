@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://{Interior Consultant}">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchanllenges-interior-consultant-1bpxmp2zs-kuroikuma.vercel.app/">
       Solution
     </a>
     <span> | </span>
